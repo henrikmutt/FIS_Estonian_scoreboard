@@ -1,8 +1,9 @@
 
+
 let tableItem
 
 // Fetch data
-fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW48_Zh4ixYfvQyP76d5I8KyhAhakcWu-_Cx/exec')
+fetch('https://script.google.com/macros/s/AKfycbxQ59-gp-acnuks463McyAkZ5ZY5ExE91t6o0knhkAAkWE_TpHKbNABTf0ke2jufjB_/exec')
   .then((data) => {
     return data.json();
   })
@@ -23,10 +24,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                 <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                 <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                 <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
             </div>
             <div class='total'>
-                <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
             </div>`;
 
       document.getElementById('containerAll').append(tableItem);
@@ -42,7 +42,7 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
         containerAll.removeChild(containerAll.firstChild);
         }
 
-        const junPoissSuusk = athleteList.filter((athlete) => athlete.sports.includes('Juunior M Freestyle suusk'));
+        const junPoissSuusk = athleteList.filter((athlete) => athlete.sports.includes('Juunior M Freestyle Suusk'));
         const sortedJunPoissSuusk = junPoissSuusk.sort((a, b) => b.total - a.total);
         sortedJunPoissSuusk.forEach((athlete) => {
         tableItem = document.createElement('div');
@@ -53,10 +53,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                         <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                         <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                         <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                        <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
                     </div>
                     <div class='total'>
-                        <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                        <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
                     </div>`;
         document.getElementById('containerAll').append(tableItem);
 
@@ -74,7 +73,7 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
         while (containerAll.firstChild) {
         containerAll.removeChild(containerAll.firstChild);
         }
-        const junTydSuusk = athleteList.filter((athlete) => athlete.sports.includes('Juunior N Freestyle suusk'));
+        const junTydSuusk = athleteList.filter((athlete) => athlete.sports.includes('Juunior N Freestyle Suusk'));
         const sortedJunTydSuusk = junTydSuusk.sort((a, b) => b.total - a.total);
         sortedJunTydSuusk.forEach((athlete) => {
         tableItem = document.createElement('div');
@@ -85,10 +84,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                         <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                         <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                         <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                        <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
                     </div>
                     <div class='total'>
-                        <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                        <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
                     </div>`;
         document.getElementById('containerAll').append(tableItem);
 
@@ -114,10 +112,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                         <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                         <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                         <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                        <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
                     </div>
                     <div class='total'>
-                        <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                        <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
                     </div>`;
         document.getElementById('containerAll').append(tableItem);
       });
@@ -142,10 +139,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                         <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                         <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                         <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                        <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
                     </div>
                     <div class='total'>
-                        <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                        <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
                     </div>`;
         document.getElementById('containerAll').append(tableItem);
       });
@@ -159,7 +155,7 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
         while (containerAll.firstChild) {
         containerAll.removeChild(containerAll.firstChild);
         }
-        const openMehedSuusk = athleteList.filter((athlete) => athlete.sports.includes('Open M Freestyle suusk'));
+        const openMehedSuusk = athleteList.filter((athlete) => athlete.sports.includes('Open M Freestyle Suusk'));
         const sortedOpenMehedSuusk = openMehedSuusk.sort((a, b) => b.total - a.total);
         sortedOpenMehedSuusk.forEach((athlete) => {
         tableItem = document.createElement('div');
@@ -170,10 +166,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                         <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                         <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                         <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                        <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
                     </div>
                     <div class='total'>
-                        <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                        <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
                     </div>`;
         document.getElementById('containerAll').append(tableItem);
       });
@@ -187,7 +182,7 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
         while (containerAll.firstChild) {
         containerAll.removeChild(containerAll.firstChild);
         }
-        const openNaisedSuusk = athleteList.filter((athlete) => athlete.sports.includes('Open N Freestyle suusk'));
+        const openNaisedSuusk = athleteList.filter((athlete) => athlete.sports.includes('Open N Freestyle Suusk'));
         const sortedOpenNaisedSuusk = openNaisedSuusk.sort((a, b) => b.total - a.total);
         sortedOpenNaisedSuusk.forEach((athlete) => {
         tableItem = document.createElement('div');
@@ -198,10 +193,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                         <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                         <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                         <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                        <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
                     </div>
                     <div class='total'>
-                        <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                        <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
                     </div>`;
         document.getElementById('containerAll').append(tableItem);
       });
@@ -226,10 +220,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                         <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                         <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                         <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                        <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
                     </div>
                     <div class='total'>
-                        <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                        <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
                     </div>`;
         document.getElementById('containerAll').append(tableItem);
       });
@@ -254,10 +247,9 @@ fetch('https://script.google.com/macros/s/AKfycbxbAVWDjyT8LZyaTadJWvw9JJYMTHCuCW
                         <p class='runPoints'><strong>RUN 1 </strong>${athlete.run1}</p>
                         <p class='runPoints'><strong>RUN 2 </strong>${athlete.run2}</p>
                         <p class='runPoints'><strong>RUN 3 </strong>${athlete.run3}</p>
-                        <p class='runPoints'><strong>RUN 4 </strong>${athlete.run4}</p>
                     </div>
                     <div class='total'>
-                        <p class='totalPoints'><strong>BEST 2 RUNS TOTAL </strong>${athlete.total}</p>
+                        <p class='totalPoints'><strong>BEST 2 RUNS AVG. </strong>${athlete.total}</p>
                     </div>`;
         document.getElementById('containerAll').append(tableItem);
       });

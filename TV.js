@@ -28,4 +28,4 @@ function autoRefresh() {
     window.location.reload();
   }
   
-  setInterval(autoRefresh, 40000);
+  setInterval(autoRefresh, 10000);

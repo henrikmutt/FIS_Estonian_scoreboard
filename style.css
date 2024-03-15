@@ -24,6 +24,15 @@ body {
     gap: 24px;
 }
 
+@media (max-width: 720px) {
+    .tableItem{
+        display: flex;
+        flex-direction: column;
+        margin: 8px 8px 16px 8px;
+        gap: 8px;
+    }
+}
+
 .junPoissSuusk {
     display: flex;
     align-items: center;
@@ -39,6 +48,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 30%;
+}
+
+@media (max-width: 720px) {
+    .run{
+        display: flex;
+        flex-direction: row;
+        max-width: 95%;
+    }
 }
 
 .runPoints {
@@ -78,17 +95,36 @@ button {
     cursor: pointer;
 }
 
+button:active {
+    background-color: #FFA02F;
+}
+
 h1 {
     color: white;
+    margin: 24px 32px;
+}
+
+@media (max-width: 720px) {
+    h1{
+        margin: 0px;
+    }
 }
 
 .athleteName {
     color: black;
 }
 
+@media (max-width: 720px) {
+    .athleteName{
+        display: flex;
+        flex-direction: column;
+        margin: 4px;
+    }
+}
+
 #header {
     display: flex;
-    padding: 24px 32px;
+    padding: 8px 32px;
     gap: 16px;
 }
 
@@ -146,6 +182,46 @@ h1 {
     padding-top: 32px;
 }
 
+.class {
+    color: white;
+    margin: 24px 64px;
+}
+
+.firstHeader {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 32px 0px 0px;
+}
+
+.headerMain {
+    background-color: #00393d;
+}
+
+.logos {
+    max-height: 144px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 32px;
+    padding-right: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+@media (max-width: 720px) {
+    .logos {
+      max-height: 32px;
+    }
+  }
+
+.logo {
+    max-height: 72px;
+}
+
+@media (max-width: 720px) {
+    .logo {
+      max-height: 32px;
+    }
+  }
 
 
 
