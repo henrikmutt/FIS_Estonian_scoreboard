@@ -179,7 +179,7 @@ h1 {
 
 .logo {
     max-width: 124px;
-    padding-top: 32px;
+    padding-top: 16px;
 }
 
 .class {
@@ -197,6 +197,7 @@ h1 {
     background-color: #00393d;
 }
 
+
 .logos {
     max-height: 144px;
     display: flex;
@@ -213,12 +214,12 @@ h1 {
     }
   }
 
-.logo {
+.logoBrand {
     max-height: 72px;
 }
 
 @media (max-width: 720px) {
-    .logo {
+    .logoBrand {
       max-height: 32px;
     }
   }
